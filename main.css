@@ -1,4 +1,9 @@
-/* Base reset */
+/* define variables */
+:root {
+    --header-main-color: rgb(20, 20, 20);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +18,24 @@ body {
   min-height: 100vh;
 }
 
-header,
+header {
+  position: sticky;   /* Keeps the header fixed at the top of the viewport when scrolling */
+  top: 0px;           /* Distance from the top edge of the viewport */
+  height: auto;       /* Height adjusts automatically based on content */
+  min-height: 70px;   /* Ensures the header is at least 70px tall */
+  z-index: 1;         /* Places header above other elements to prevent overlap */
+  line-height: 1.4;
+  background-color: rgb(12, 12, 12);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+  transition: background-color .4s;
+}
+
+header.has-billboard:not(.solid),
+header.on-profiles-gate:not(.solid) {
+  background-color: transparent; /* only gradient shows */
+}
+
+
 footer {
   background: #f3f4f6;
   padding: 1rem 0;
@@ -43,4 +65,25 @@ footer p {
   text-align: center;
   color: #6b7280;
   font-size: 0.875rem;
+}
+
+
+.netflix-sans-font-loaded {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.logo {
+  display: inline-block;   /* makes the <a> behave like a box */
+  width: 92.5px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  display: block;          /* removes inline-gap issues */
+  width: 100%;             /* scales image to fill parent */
+  height: 100%;            /* keeps aspect ratio stretched to parent */
+  margin: 0;
+  padding: 0;
 }
