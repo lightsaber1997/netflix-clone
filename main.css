@@ -124,3 +124,11 @@ a {
 header {
   font-size: 14px;
 }
+
+header .navbar-secondary {
+  display: flex;          /* make this a flex container */
+  flex-grow: 1;           /* allow it to grow and take remaining space in the header */
+  height: 100%;           /* make it stretch full height of its parent (header) */
+  align-items: center;    /* vertically center its child items */
+  justify-content: flex-end; /* push child items to the right side */
+}
