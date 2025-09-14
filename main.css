@@ -197,8 +197,61 @@ header .navbar-notification {
   width: 0;
 }
 
+.main-view {
+  position: relative;
+  width: 100%;
+  height: 800px;  /* same as .main-title-image-wrapper */
+  overflow: hidden;
+}
+
+
+.main-view-info {
+  left: 60px;
+  bottom: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  width: 36%;
+  z-index: 10;
+}
+
+.main-view svg {
+
+  z-index: 21;          /* higher than the background image (default 0) */
+  color: black;         /* make it visible */
+  cursor: pointer;
+}
+
+.main-view-play {
+  position: absolute;
+  bottom: 20%;
+  left: 56px;
+  z-index: 21;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  margin-left: 0;
+  height: 50px;
+}
+
+.main-view span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.main-title-image-wrapper {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
 .main-title-image {
   width: 100%;
+
   opacity: 1;
 }
 
