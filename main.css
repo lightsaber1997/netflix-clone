@@ -1,6 +1,7 @@
 /* define variables */
 :root {
     --header-main-color: rgb(20, 20, 20);
+    --navbar-white-primary: #fff;
 }
 
 
@@ -116,7 +117,7 @@ a {
 }
 
 .navbar-tab a.current {
-  color: #fff;
+  color: var(--navbar-white-primary);
   cursor: default;
   font-weight: 500;
 }
@@ -131,4 +132,20 @@ header .navbar-secondary {
   height: 100%;           /* make it stretch full height of its parent (header) */
   align-items: center;    /* vertically center its child items */
   justify-content: flex-end; /* push child items to the right side */
+  position: absolute;
+  right: 60px;
+
+  color: var(--navbar-white-primary);
+}
+
+header .navbar-secondary-element {
+  margin-right: 15px;
+}
+
+header .navbar-search {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--navbar-white-primary);
 }
