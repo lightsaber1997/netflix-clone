@@ -67,6 +67,9 @@ footer p {
   font-size: 0.875rem;
 }
 
+ul {
+  list-style-type: disc;
+}
 
 .netflix-sans-font-loaded {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
@@ -80,10 +83,44 @@ footer p {
   padding: 0;
 }
 
+a.logo {
+  margin-right: 25px;
+}
+
 .logo img {
   display: block;          /* removes inline-gap issues */
   width: 100%;             /* scales image to fill parent */
   height: 100%;            /* keeps aspect ratio stretched to parent */
   margin: 0;
   padding: 0;
+}
+
+.navbar-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-tab {
+  list-style-type: none;
+  display: block;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;  
+}
+
+.navbar-tab a {
+  color: #e5e5e5;
+}
+
+.navbar-tab a.current {
+  color: #fff;
+  cursor: default;
+  font-weight: 500;
+}
+
+header {
+  font-size: 14px;
 }
