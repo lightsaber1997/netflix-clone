@@ -138,6 +138,11 @@ header .navbar-secondary {
   color: var(--navbar-white-primary);
 }
 
+header a {
+  color: var(--navbar-white-primary);
+}
+
+
 header .navbar-secondary-element {
   margin-right: 15px;
 }
@@ -148,4 +153,43 @@ header .navbar-search {
   cursor: pointer;
   display: inline-block;
   color: var(--navbar-white-primary);
+}
+
+header .navbar-notification {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: .2em;
+  padding: 2px 6px 3px;
+  position: relative;
+  color: var(--navbar-white-primary);
+  cursor: pointer;
+}
+
+.profile-icon {
+  border-radius: 4px;      /* round the corners slightly (4px radius) */
+  height: 32px;            /* set fixed height of the icon */
+  vertical-align: middle;  /* align with text or inline elements vertically */
+  width: 32px;             /* set fixed width of the icon */
+}
+
+.account-dropdown {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+}
+
+.caret {
+  border-top-color: rgb(255, 255, 255);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  height: 0;
+  margin-left: 10px;
+  transition: transform 367ms cubic-bezier(.21,0,.07,1);
+  width: 0;
 }
