@@ -2,13 +2,13 @@
 :root {
     --header-main-color: rgb(20, 20, 20);
     --navbar-white-primary: #fff;
+    --base-font-size: 0.75vw;
 }
 
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +17,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto; /* header - main - footer */
   min-height: 100vh;
+  background: #141414;
+  font-size: var(--base-font-size);
 }
 
 header {
@@ -43,7 +45,7 @@ footer {
 }
 
 main {
-  padding: 2rem 0;
+  
 }
 
 .container {
@@ -167,6 +169,7 @@ header .navbar-notification {
   cursor: pointer;
 }
 
+
 .profile-icon {
   border-radius: 4px;      /* round the corners slightly (4px radius) */
   height: 32px;            /* set fixed height of the icon */
@@ -192,4 +195,114 @@ header .navbar-notification {
   margin-left: 10px;
   transition: transform 367ms cubic-bezier(.21,0,.07,1);
   width: 0;
+}
+
+.main-title-image {
+  width: 100%;
+  opacity: 1;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  color: #eff;
+}
+
+.rowHeader{
+  line-height: 1.3;
+  margin: 0;
+}
+
+.rowTitle {
+  color: #e5e5e5;
+  display: inline-block;
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin: 0 4% 0.5em;
+  min-width: 6em;
+  text-decoration: none;
+}
+
+.row-header-title {
+  display: table-cell;    /* behaves like a table cell so vertical-align works */
+  font-size: 1.4vw;       /* font size = 1.4% of the viewport width (responsive) */
+  line-height: 1.25vw;    /* line height = 1.25% of the viewport width */
+  vertical-align: bottom; /* align content to the bottom of its parent cell */
+}
+
+footer {
+  color: grey;
+  margin: 20px auto 0;
+  width: 980px;
+  padding: 0 4%;
+  background: #141414;
+}
+
+footer a {
+  color: grey;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 0 14px;
+  padding: 0;
+}
+
+
+
+.footer-copyright {
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.member-footer-link-wrapper {
+  flex: 0 0 20%;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-bottom: 16px;
+  margin-right: 22px;
+}
+
+.copy-text{
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+img {
+  border: 0;
+}
+
+.slider-item {
+  width: 16.666667%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 0.2vw;
+  position: relative;
+  vertical-align: top;
+  white-space: normal;
+  z-index: 1;
+}
+
+.boxart-rounded {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.2vw;
+  width: 100%;
+  height: 160px;
+}
+
+.boxart-image {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
